@@ -1,7 +1,1 @@
-@extends('layouts.app')
-
-@section('content')
-    {{-- expr --}}
-    <hello/>
-
-@endsection  
+echo 1;

@@ -2,6 +2,8 @@
 
 @section('content')
     {{-- expr --}}
-    <hello/>
+    {{-- <hello 
+        :urldata="{{ json_encode($url_data) }}"
+    /> --}} 
 
 @endsection  

@@ -9,6 +9,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
+        
         <!-- Styles -->
         <style>
             html, body {
@@ -65,6 +66,7 @@
     </head>
     <body>
         <div id="app" class="flex-center position-ref full-height">
+            
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -78,27 +80,45 @@
                     @endauth
                 </div>
             @endif
-                <hello/>
+                 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class=" m-b-md">
+                   
+                    
+
+                     
+                   {{-- <chartline-component/>--}}
+            
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="links"> 
                 </div>
+            </div> 
+
+
+
+            <div class="row m-2" data-hash=7>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body" style="min-height: 720px;">
+                            <h2 class="text-center">#7 REALTIME chartJS && VUE</h2>
+                            <socket-component/>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
-sadada
+
+
+
+
             <div class="py-4">
                 @yield('content')
             </div>
-
         </div>
+
         <script src="{{ asset('js/app.js')}}"></script>
+
     </body>
 </html>
